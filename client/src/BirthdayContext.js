@@ -58,9 +58,7 @@ export const BirthdayProvider = ({ children }) => {
   //Removing fav birthdays from list
   const removeFavorites = (birthday) => {
     setFavorites((prevFavorites) =>
-      prevFavorites.filter(
-        (fav) => fav.pages[0].title !== birthday.pages[0].title
-      )
+      prevFavorites.filter((fav) => fav.pages[0].tid !== birthday.pages[0].tid)
     );
   };
 

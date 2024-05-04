@@ -1,4 +1,3 @@
-// BirthdayList.js
 import React, { useContext } from 'react';
 import { BirthdayContext } from '../BirthdayContext';
 import { Link } from 'react-router-dom';
@@ -15,8 +14,8 @@ const BirthdayList = () => {
   } = useContext(BirthdayContext);
 
   return (
-    <div className=' '>
-      <div className=' row bg-dark text-white py-3 align-items-center'>
+    <div>
+      <div className='row bg-dark text-white py-3 align-items-center'>
         <h3 className='col-md-4 col-12 text-center mb-md-0 mb-4'>
           Birthdays Tracker
         </h3>
